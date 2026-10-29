@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, power } = require('../src/calc');
+const { add, subtract, multiply, divide, power, remainder } = require('../src/calc');
 
 describe('calc', () => {
   test('add: 2 + 3 は 5 になる', () => {
@@ -26,4 +26,8 @@ test('subtract: 5 - 3 は 2 になる', () => {
     expect(power(2, 3)).toBe(8);
   });
 
+  test('remainder: 7 % 3は 1 になる', () => {
+    expect(remainder(7, 3)).toBe(1);
   });
+
+});
