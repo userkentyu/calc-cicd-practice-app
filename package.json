@@ -1,0 +1,12 @@
+{
+  "name": "calc-cicd-practice-app",
+  "version": "1.0.0",
+  "description": "3時間で体験するCI/CD入門の演習用プロジェクト（計算機アプリ）",
+  "scripts": {
+  "test": "jest"
+},
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
