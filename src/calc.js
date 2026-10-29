@@ -31,7 +31,7 @@ function remainder(a, b) {
 
 // 数値の配列を受け取り、平均値を返す関数
 function average(numbers) {
-  if (numbers.length <= 1) {
+  if (numbers.length === 0) {
     return 0;
   }
   let sum = 0;
