@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-steps:
+    steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v7
 
