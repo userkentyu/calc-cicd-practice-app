@@ -1,0 +1,24 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v7
+
+      - name: Node.jsをセットアップ
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24.x'
+
+      - name: 依存パッケージをインストール
+        run: npm ci
+
+      - name: テストを実行
+        run: npm test
