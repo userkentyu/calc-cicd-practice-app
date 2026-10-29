@@ -29,4 +29,4 @@ function remainder(a, b) {
   return a % b;
 }
 
-module.exports = { add, subtract, multiply, divide, power, remainder, };
+module.exports = { add, subtract, multiply, divide, power, remainder };
